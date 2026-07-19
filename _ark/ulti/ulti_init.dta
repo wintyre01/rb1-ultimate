@@ -75,7 +75,7 @@
 
 {set $tiltsensor TRUE}
 
-{set $prodrums FALSE}
+;{set $prodrums FALSE}
 
 {set $micdeploy TRUE}
 

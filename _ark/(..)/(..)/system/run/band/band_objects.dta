@@ -448,12 +448,12 @@
             (valid_male
                bool
                (hide {! {has_substr [category] "directed"}})
-               (help "is this shot valid if the target is male?")
+               (help "is this shot valid if the target is masculine?")
             )
             (valid_female
                bool
                (hide {! {has_substr [category] "directed"}})
-               (help "is this shot valid for if the target is female?")
+               (help "is this shot valid for if the target is feminine?")
             )
             (valid_banger
                bool
@@ -1637,7 +1637,7 @@
       )
       (gender
          symbol
-         (help "gender")
+         (help "body type")
          (list (male female))
       )
       (randomize_colors

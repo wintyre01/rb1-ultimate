@@ -61,38 +61,29 @@
             (1 7 10 12)
             (0 1 7 10)
             (0 0 2 7)
-            (0 0 0 2)
-         )
-         (lose_penalty -5)
-      )
+            (0 0 0 2))
+         (lose_penalty 0))
       (big_club
          (performance
             (2 15 20 25)
             (0 2 15 20)
             (0 0 4 15)
-            (0 0 0 4)
-         )
-         (lose_penalty -7)
-      )
+            (0 0 0 4))
+         (lose_penalty 0))
       (theater
          (performance
             (3 25 36 40)
             (0 3 25 36)
             (0 0 6 25)
-            (0 0 0 6)
-         )
-         (lose_penalty -12)
-      )
+            (0 0 0 6))
+         (lose_penalty 0))
       (arena
          (performance
             (4 30 40 50)
             (0 4 30 40)
             (0 0 8 30)
-            (0 0 0 8)
-         )
-         (lose_penalty -15)
-      )
-   )
+            (0 0 0 8))
+         (lose_penalty 0)))
    (fans
       (15 210)
       (30 900)
@@ -299,14 +290,17 @@
    )
    (bwtcomplete_available
       ONEOFF_HINT
-      (cond {{tour performer} can_win_item tour_bwt_complete})
-      (screen tour_band_canwinitem_screen)
-   )
-   (first_fans_lost
-      ONEOFF_HINT
-      (cond {{tour performer} have_lost_fans})
-      (screen tour_band_fanslost_screen)
-   )
+      (cond
+         {{tour performer}
+            can_win_item
+            tour_bwt_complete})
+      (screen tour_band_canwinitem_screen))
+;   (first_fans_lost
+;      ONEOFF_HINT
+;      (cond
+;         {{tour performer}
+;            have_lost_fans})
+;      (screen tour_band_fanslost_screen))
    (first_buzz_cap
       ONEOFF_HINT
       (cond {== {{tour performer} buzz_state} kTourBuzzCap})
@@ -342,24 +336,28 @@
    (tier1_1
       (small_club
          (song1
-            (songs (band 1))
+            (songs
+               inbloom)
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song2
-            (songs (band 2))
+            (songs
+               maps)
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song3
-            (songs (band 3))
+            (songs
+               shouldistay)
             (display_song TRUE)
             (reward_per_star 5)
          )
       )
       (big_club
          (song4
-            (songs (band 4))
+            (songs
+               ithinkimparanoid)
             (display_song TRUE)
             (fame (town 6))
             (reward_per_star 25)
@@ -374,12 +372,11 @@
       (last
          (townall
             (songs
-               (band 1)
-               (band 2)
-               (band 3)
-               (band 4)
-               (band 45)
-            )
+               inbloom
+               maps
+               shouldistay
+               ithinkimparanoid
+               runtothehills)
             BWT_BUZZ_EASYBLOCKMEGAPLUS
             (fame
                (town 30)
@@ -389,7 +386,8 @@
             (reward_per_star 80)
          )
          (song45
-            (songs (band 45))
+            (songs
+               runtothehills)
             BWT_BUZZ_EASYBLOCKMEGAPLUS
             (display_song TRUE)
             (fame
@@ -404,30 +402,34 @@
    (tier1_2
       (small_club
          (song5
-            (songs (band 5))
+            (songs
+               hereitgoesagain)
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song6
-            (songs (band 6))
+            (songs
+               blitzkriegbop)
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song7
-            (songs (band 7))
+            (songs
+               sayitaintso)
             (display_song TRUE)
             (reward_per_star 5)
          )
       )
       (big_club
          (song17
-            (songs (band 17))
+            (songs
+               gowiththeflow)
             (display_song TRUE)
             (fame (town 6))
             (reward_per_star 25)
          )
          (unlock_bus
-            (songs random random wanteddeadoralive)
+            (songs random random thehandthatfeeds)
             (reward_per_star 25)
             (award_item tour_vehicle_bus)
             (fame
@@ -439,11 +441,10 @@
       (last
          (townall
             (songs
-               (band 5)
-               (band 6)
-               (band 7)
-               (band 17)
-            )
+               hereitgoesagain
+               blitzkriegbop
+               sayitaintso
+               gowiththeflow)
             BWT_BUZZ_EASYBLOCK
             (fame
                (town 20)
@@ -457,24 +458,28 @@
    (tier1_3
       (small_club
          (song8
-            (songs (band 8))
+            (songs
+               waveofmutilation)
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song9
-            (songs (band 9))
+            (songs
+               creep)
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song10
-            (songs (band 10))
+            (songs
+               missqueen)
             (display_song TRUE)
             (reward_per_star 5)
          )
       )
       (big_club
          (song18
-            (songs (band 18))
+            (songs
+               epic)
             BWT_BUZZ_EASYBLOCK
             (display_song TRUE)
             (fame (town 6))
@@ -482,11 +487,10 @@
          )
          (tiermara
             (songs
-               (band 1)
-               (band 2)
-               (band 3)
-               (band 4)
-            )
+               inbloom
+               maps
+               shouldistay
+               ithinkimparanoid)
             BWT_BUZZ_EASYBLOCKMINORPLUS
             (reward_per_star 25)
             (fame
@@ -498,11 +502,10 @@
       (last
          (townall
             (songs
-               (band 8)
-               (band 9)
-               (band 10)
-               (band 18)
-            )
+               waveofmutilation
+               creep
+               missqueen
+               epic)
             BWT_BUZZ_EASYBLOCKPLUS
             (fame
                (town 20)
@@ -516,30 +519,32 @@
    (tier2_1
       (small_club
          (song11
-            (songs (band 11))
+            (songs
+               learntofly)
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song14
-            (songs (band 14))
+            (songs
+               sabotage)
             (display_song TRUE)
             (reward_per_star 5)
          )
       )
       (big_club
          (song25
-            (songs (band 25))
+            (songs
+               whenyouwereyoung)
             (display_song TRUE)
             (fame (town 6))
             (reward_per_star 25)
          )
          (tiermara
             (songs
-               (band 5)
-               (band 6)
-               (band 7)
-               (band 8)
-            )
+               hereitgoesagain
+               blitzkriegbop
+               sayitaintso
+               waveofmutilation)
             BWT_BUZZ_EASYBLOCKMINORPLUS
             (reward_per_star 25)
             (fame
@@ -550,7 +555,7 @@
       )
       (arena
          (unlock_jet
-            (songs random random trainkeptarollin)
+            (songs random random dontfearthereaper)
             BWT_BUZZ_EASYBLOCK
             (fame
                (town 12)
@@ -562,10 +567,9 @@
          )
          (townall
             (songs
-               (band 11)
-               (band 14)
-               (band 25)
-            )
+               learntofly
+               sabotage
+               whenyouwereyoung)
             BWT_BUZZ_EASYBLOCK
             (fame
                (town 21)
@@ -579,25 +583,28 @@
    (tier2_2
       (small_club
          (song12
-            (songs (band 12))
+            (songs
+               orangecrush)
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song15
-            (songs (band 15))
+            (songs
+               celebrityskin)
             (display_song TRUE)
             (reward_per_star 5)
          )
       )
       (big_club
          (song26
-            (songs (band 26))
+            (songs
+               danicalifornia)
             (display_song TRUE)
             (fame (town 6))
             (reward_per_star 25)
          )
          (unlock_roadies
-            (songs random random random)
+            (songs random random wanteddeadoralive)
             (fame
                (town 12)
                (world 80)
@@ -607,11 +614,10 @@
          )
          (tiermara
             (songs
-               (band 9)
-               (band 10)
-               (band 11)
-               (band 12)
-            )
+               creep
+               missqueen
+               learntofly
+               orangecrush)
             (reward_per_star 80)
             (fame
                (town 15)
@@ -622,10 +628,9 @@
       (theater
          (townall
             (songs
-               (band 12)
-               (band 15)
-               (band 26)
-            )
+               orangecrush
+               celebrityskin
+               danicalifornia)
             BWT_BUZZ_EASYBLOCKPLUS
             (fame
                (town 33)
@@ -638,13 +643,15 @@
    (tier2_3
       (small_club
          (song13
-            (songs (band 13))
+            (songs
+               thehandthatfeeds)
             BWT_BUZZ_EASYBLOCK
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song16
-            (songs (band 16))
+            (songs
+               gimmeshelter)
             BWT_BUZZ_EASYBLOCK
             (display_song TRUE)
             (reward_per_star 5)
@@ -652,7 +659,8 @@
       )
       (big_club
          (song27
-            (songs (band 27))
+            (songs
+               detroitrockcity)
             BWT_BUZZ_EASYBLOCKPLUS
             (display_song TRUE)
             (fame (town 6))
@@ -660,11 +668,10 @@
          )
          (tiermara
             (songs
-               (band 13)
-               (band 14)
-               (band 15)
-               (band 16)
-            )
+               thehandthatfeeds
+               sabotage
+               celebrityskin
+               gimmeshelter)
             BWT_BUZZ_EASYBLOCKMEGAPLUS
             (reward_per_star 25)
             (fame
@@ -676,10 +683,9 @@
       (theater
          (townall
             (songs
-               (band 13)
-               (band 16)
-               (band 27)
-            )
+               thehandthatfeeds
+               gimmeshelter
+               detroitrockcity)
             BWT_BUZZ_MEDIUMBLOCK
             (fame
                (town 33)
@@ -692,13 +698,15 @@
    (tier3_1
       (small_club
          (song19
-            (songs (band 19))
+            (songs
+               blackholesun)
             BWT_BUZZ_EASYBLOCKPLUS
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song28
-            (songs (band 28))
+            (songs
+               electricversion)
             BWT_BUZZ_EASYBLOCKPLUS
             (display_song TRUE)
             (reward_per_star 5)
@@ -706,7 +714,8 @@
       )
       (big_club
          (song38
-            (songs (band 38))
+            (songs
+               entersandman)
             BWT_BUZZ_EASYBLOCKPLUS
             (display_song TRUE)
             (fame (town 6))
@@ -725,10 +734,9 @@
       (arena
          (townall
             (songs
-               (band 19)
-               (band 28)
-               (band 38)
-            )
+               blackholesun
+               electricversion
+               entersandman)
             BWT_BUZZ_MEDIUMBLOCKPLUS
             (fame
                (town 33)
@@ -750,19 +758,22 @@
    (tier3_2
       (small_club
          (song20
-            (songs (band 20))
+            (songs
+               mainoffender)
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song29
-            (songs (band 29))
+            (songs
+               areyougonnabemygirl)
             (display_song TRUE)
             (reward_per_star 5)
          )
       )
       (big_club
          (song34
-            (songs (band 34))
+            (songs
+               cherubrock)
             BWT_BUZZ_EASYBLOCK
             (display_song TRUE)
             (fame (town 6))
@@ -770,11 +781,10 @@
          )
          (tiermara
             (songs
-               (band 17)
-               (band 18)
-               (band 19)
-               (band 20)
-            )
+               gowiththeflow
+               epic
+               blackholesun
+               mainoffender)
             BWT_BUZZ_EASYBLOCK
             (reward_per_star 25)
             (fame
@@ -783,7 +793,7 @@
             )
          )
          (unlock_promoter
-            (songs random random random highwaystar)
+            (songs random random random deadonarrival)
             BWT_BUZZ_EASYBLOCKMINORPLUS
             (fame
                (town 15)
@@ -796,10 +806,9 @@
       (theater
          (townall
             (songs
-               (band 20)
-               (band 29)
-               (band 34)
-            )
+               mainoffender
+               areyougonnabemygirl
+               cherubrock)
             BWT_BUZZ_MEDIUMBLOCK
             (fame
                (town 20)
@@ -812,13 +821,15 @@
    (tier3_3
       (small_club
          (song21
-            (songs (band 21))
+            (songs
+               wanteddeadoralive)
             (display_song TRUE)
             (reward_per_star 5)
             BWT_BUZZ_EASYBLOCK
          )
          (song30
-            (songs (band 30))
+            (songs
+               dontfearthereaper)
             (display_song TRUE)
             (reward_per_star 5)
             BWT_BUZZ_EASYBLOCK
@@ -826,7 +837,8 @@
       )
       (big_club
          (song37
-            (songs (band 37))
+            (songs
+               trainkeptarollin)
             (display_song TRUE)
             (fame (town 6))
             (reward_per_star 25)
@@ -834,11 +846,10 @@
          )
          (tiermara
             (songs
-               (band 21)
-               (band 22)
-               (band 23)
-               (band 24)
-            )
+               wanteddeadoralive
+               reptilia
+               suffragettecity
+               paranoid)
             (reward_per_star 25)
             (fame
                (town 15)
@@ -850,10 +861,9 @@
       (theater
          (townall
             (songs
-               (band 21)
-               (band 30)
-               (band 37)
-            )
+               wanteddeadoralive
+               dontfearthereaper
+               trainkeptarollin)
             (fame
                (town 20)
                (world 103)
@@ -866,19 +876,22 @@
    (tier3_4
       (small_club
          (song22
-            (songs (band 22))
+            (songs
+               reptilia)
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song31
-            (songs (band 31))
+            (songs
+               vasoline)
             (display_song TRUE)
             (reward_per_star 5)
          )
       )
       (big_club
          (song39
-            (songs (band 39))
+            (songs
+               foreplaylongtime)
             (display_song TRUE)
             (fame (town 6))
             (reward_per_star 25)
@@ -908,10 +921,9 @@
       (arena
          (townall
             (songs
-               (band 22)
-               (band 31)
-               (band 39)
-            )
+               reptilia
+               vasoline
+               foreplaylongtime)
             (fame
                (town 20)
                (world 103)
@@ -930,13 +942,15 @@
    (tier3_5
       (small_club
          (song23
-            (songs (band 23))
+            (songs
+               suffragettecity)
             (display_song TRUE)
             (reward_per_star 5)
             BWT_BUZZ_EASYBLOCKMEGAPLUS
          )
          (song32
-            (songs (band 32))
+            (songs
+               ballroomblitz)
             (display_song TRUE)
             (reward_per_star 5)
             BWT_BUZZ_EASYBLOCKMEGAPLUS
@@ -944,7 +958,8 @@
       )
       (big_club
          (song36
-            (songs (band 36))
+            (songs
+               nexttoyou)
             (display_song TRUE)
             (fame (town 6))
             (reward_per_star 25)
@@ -952,11 +967,10 @@
          )
          (tiermara
             (songs
-               (band 25)
-               (band 26)
-               (band 27)
-               (band 28)
-            )
+               whenyouwereyoung
+               danicalifornia
+               detroitrockcity
+               electricversion)
             (reward_per_star 25)
             (fame
                (town 15)
@@ -968,10 +982,9 @@
       (theater
          (townall
             (songs
-               (band 23)
-               (band 32)
-               (band 36)
-            )
+               suffragettecity
+               ballroomblitz
+               nexttoyou)
             (fame
                (town 20)
                (world 123)
@@ -984,19 +997,22 @@
    (tier3_6
       (small_club
          (song24
-            (songs (band 24))
+            (songs
+               paranoid)
             (display_song TRUE)
             (reward_per_star 5)
          )
          (song33
-            (songs (band 33))
+            (songs
+               deadonarrival)
             (display_song TRUE)
             (reward_per_star 5)
          )
       )
       (big_club
          (song35
-            (songs (band 35))
+            (songs
+               welcomehome)
             (display_song TRUE)
             (fame (town 6))
             (reward_per_star 25)
@@ -1004,12 +1020,11 @@
          )
          (tiermara
             (songs
-               (band 29)
-               (band 30)
-               (band 31)
-               (band 32)
-               (band 33)
-            )
+               areyougonnabemygirl
+               dontfearthereaper
+               vasoline
+               ballroomblitz
+               deadonarrival)
             (reward_per_star 25)
             (fame
                (town 15)
@@ -1032,10 +1047,9 @@
       (theater
          (townall
             (songs
-               (band 24)
-               (band 33)
-               (band 35)
-            )
+               paranoid
+               deadonarrival
+               welcomehome)
             (fame
                (town 20)
                (world 103)

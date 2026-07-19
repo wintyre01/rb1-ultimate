@@ -44,8 +44,7 @@
    "BODYGUARDS have joined your crew! \nYou can finally stop worrying about crazed fans hiding in birthday cakes! Plus it always looks cool in pictures to be flanked by really giant dudes with crew cuts. \n\nSpeaking of pictures, maybe it's time to hire a PR FIRM? After that last hotel incident, you need some pros around to put a positive spin on your behavior..."
 )
 (tour_hint_new_tour_staff_tourmanager
-   "A PR FIRM has joined your crew! \nIt may not sound glamorous, but you'll be glad you've got 'em around once those photos of you in Vegas turn up... not to mention the \qshark incident.\q \n\nOf course it's just that sort of behavior that can lead to a 'Hall of Fame' award, but only the best are even invited..."
-)
+   "A PR FIRM has joined your crew! \nIt may not sound glamorous, but you'll be glad you've got 'em around once those photos of you in Vegas turn up... not to mention the \qshark incident\q. \n\nOf course it's just that sort of behavior that can lead to a 'Hall of Fame' award, but only the best are even invited...")
 (tour_hint_new_tour_halloffame_complete
    "You have joined the Hall of Fame!! Congratulations on becoming a chapter in the book of music history. You've come a long way... and you'll be remembered forever. Oh man... up-and-coming bands are totally gonna list you as an influence now! That is SO awesome!"
 )
@@ -288,7 +287,7 @@
    "Vater Drumsticks thinks that you're on track to becoming the next big thing and has signed you as one of their showcase artists. Nice work!"
 )
 (tour_sponsor_drum_welcome
-   "Vic Firth<sup>®</sup> welcomes you to the world of drums and has given you a free set of drumsticks to start you on the road to stardom!"
+   "Vic Firth<sup>ï¿½</sup> welcomes you to the world of drums and has given you a free set of drumsticks to start you on the road to stardom!"
 )
 (tour_sponsor_guitar_bigclub
    "Electro-Harmonix<sup>TM</sup> was so impressed with your last performance that they've not only given you some free pedals, but also vouched for you at some pretty cool big clubs!"

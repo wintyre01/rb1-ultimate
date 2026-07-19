@@ -1,5 +1,3 @@
-; DO NOT ADD ENTRIES TO THIS FILE!!!!!!
-; locale works weird in this game and this file only exists to REMOVE entries
 (legal_text
    "© 2007 Harmonix Music Systems, Inc. All Rights Reserved. Harmonix, Rock Band and all related titles and logos are trademarks of Harmonix Music Systems, Inc., an MTV Networks company. Rock Band developed by Harmonix Music Systems, Inc. MTV: Music Television, MTV Games and all related titles and logos are trademarks of MTV Networks, a division of Viacom International Inc. Protected by United States Patent Nos. 6,429,863, 6,482,087 and 7,164,076.  Other domestic and foreign patent applications pending."
 )
@@ -317,6 +315,8 @@
 (Lesson2 "Lesson2")
 (Lesson3 "Lesson3")
 (Lesson4 "Lesson4")
+(male "MASCULINE")
+(female "FEMININE")
 (pause_resume "RESUME")
 (pause_restart "RESTART")
 (lefty_flip "LEFTY MODE")
@@ -647,7 +647,7 @@
    "The green lines tell you how high or low to sing - try to keep your Pitch Indicator matched up with those lines."
 )
 (loading_help25
-   "If your arrow moves down to the words themselves, you've hit a \qtalky part.\q In these sections pitch doesn't matter. It's all about getting the words right."
+   "If your arrow moves down to the words themselves, you've hit a \qtalky part\q. In these sections pitch doesn't matter. It's all about getting the words right."
 )
 (loading_help26
    "The little circles are percussion notes. Hit your microphone like a tambourine to play them."
@@ -746,40 +746,40 @@
    "Energy Phrases continue to appear once you go into Overdrive. Hit them to earn while you burn, and stay in Overdrive longer."
 )
 (loading_trivia1
-   "Audience member Scot Halpin took the stage as drummer for The Who for three songs at a concert in 1973 after drummer Keith Moon passed out mid-gig."
+   "Audience member Scot Halpin took the stage as drummer for the Who for three songs at a concert in 1973 after drummer Keith Moon passed out mid-gig."
 )
 (loading_trivia2
-   "The legendary Keith Richards and Mick Jagger are known as the \qGlimmer Twins.\q"
+   "The legendary Keith Richards and Mick Jagger are known as the \qGlimmer Twins\q."
 )
 (loading_trivia3
-   "After leaving Black Sabbath in 1979, Ozzy Osbourne was replaced by Ronnie James Dio, who was replaced by Ian Gillan, who was replaced by David Donato, who was replaced by Glenn Hughes, who was replaced by Ray Gillen, who was replaced by Tony Martin. And so on."
+   "After leaving Black Sabbath in 1979, Ozzy Osbourne was replaced by Ronnie James Dio, who was replaced by Ian Gillan, who was replaced by David Donato, who was replaced by Glenn Hughes, who was replaced by Ray Gillen, who was replaced by Tony Martin, and so on."
 )
 (loading_trivia4
    "Tommy Ramone took the drum throne for the Ramones when no one else wanted the job. Up until then, he was happy managing the band."
 )
 (loading_trivia5
-   "Keith Moon of The Who is credited with coming up with Led Zeppelin's band name, asserting that the band would go over like a lead Zeppelin."
+   "Keith Moon of the Who is credited with coming up with Led Zeppelin's band name, asserting that the band would go over like a lead Zeppelin."
 )
 (loading_trivia6
    "In the mid-seventies, two KISS comic books were released. Allegedly the band members' blood was mixed with the red ink used to print the books."
 )
 (loading_trivia7
-   "\qWon't Get Fooled Again\q was the last song Keith Moon performed with The Who, on May 25, 1978."
+   "\qWon't Get Fooled Again\q was the last song Keith Moon performed with the Who, on May 25, 1978."
 )
 (loading_trivia8
-   "This song is so popular in Finland that the phrase \qSoittakaa Paranoid!\q is now the Finnish version of \qPlay Freebird!\q"
+   "This song is so popular in Finland that the phrase \qSoittakaa Paranoid!\q is now the Finnish version of \qPlay Free Bird!\q"
 )
 (loading_trivia9
-   "Despite his desire to sing back-up, drummer Keith Moon was banned from the studio while the rest of The Who were recording vocals."
+   "Despite his desire to sing back-up, drummer Keith Moon was banned from the studio while the rest of the Who were recording vocals."
 )
 (loading_trivia10
-   "This song was given limited airplay on the BBC's Radio One because it was deemed \qtoo depressing.\q"
+   "This song was given limited airplay on BBC's Radio One because it was deemed \qtoo depressing\q."
 )
 (loading_trivia11
    "Keith Richards of the Rolling Stones was reportedly expelled from school for truancy."
 )
 (loading_trivia12
-   "The Who was formerly named The High Numbers and released an unsuccessful single called \qZoot Suit\q in 1964."
+   "The Who was formerly named the High Numbers and released an unsuccessful single called \qZoot Suit\q in 1964."
 )
 (loading_trivia13
    "The first single released by the Rolling Stones was a cover of Chuck Berry's \qCome On\q and was not liked by either the press or the Stones themselves."
@@ -788,7 +788,7 @@
    "Deep Purple's first album was licensed by Tetragrammaton Records, a label co-founded by comedian Bill Cosby."
 )
 (loading_trivia15
-   "At Rolling Stones performances, Mick Jagger often introduces drummer Charlie Watts as \qThe Wembley Whammer.\q"
+   "At Rolling Stones performances, Mick Jagger often introduces drummer Charlie Watts as \qThe Wembley Whammer\q."
 )
 (loading_trivia16
    "Nirvana went through five previous drummers before adding Dave Grohl as a permanent member."
@@ -812,7 +812,7 @@
    "Throughout the Ramones' career, singer Joey and guitarist Johnny maintained one of the most well-documented animosities in music history."
 )
 (loading_trivia23
-   "Before settling on their current band name, the Red Hot Chili Peppers once considered calling themselves \qSpigot Blister and the Chest Pimps.\q"
+   "Before settling on their current band name, the Red Hot Chili Peppers once considered calling themselves \qSpigot Blister and the Chest Pimps\q."
 )
 (loading_trivia24
    "For years, rumors circulated that KISS's Gene Simmons had grafted a cow's tongue onto his own tongue. It's probably not true."
@@ -827,19 +827,19 @@
    "Don't bother stopping to visit his grave while you're on tour -- Gene Frenkle is fictional."
 )
 (loading_trivia28
-   "\qTom Sawyer\q was the theme song for the TV show MacGyver... in Brazil."
+   "\qTom Sawyer\q was the theme song for the TV show MacGyver...in Brazil."
 )
 (loading_trivia29
    "David Jones changed his last name to Bowie to avoid confusion with the then more-famous member of the Monkees."
 )
 (loading_trivia30
-   "When Coheed and Cambria's Claudio Sanchez was asked to give advice to hopeful rock stars, his response was \qListen to Maiden.\q"
+   "When Coheed and Cambria's Claudio Sanchez was asked to give advice to hopeful rock stars, his response was \qListen to Maiden\q."
 )
 (loading_trivia31
    "Soundgarden bassist and co-founding member Hiro Yamamoto departed the band in order to complete a Master's Degree in Physical Chemistry."
 )
 (loading_trivia32
-   "Blue Öyster Cult singer Eric Bloom claims that he was the cowbell player on \qDon't Fear the Reaper.\q Former bassist Joe Bouchard, however, says that the cowbell virtuoso was his brother Albert."
+   "Blue Öyster Cult singer Eric Bloom claims that he was the cowbell player on \q(Don't Fear) The Reaper\q. Former bassist Joe Bouchard, however, says that the cowbell virtuoso was his brother Albert."
 )
 (loading_trivia33
    "Black Sabbath was originally named the Polka Tulk Blues Company."
@@ -851,7 +851,7 @@
    "R.E.M. held their first rehearsals in a converted church."
 )
 (loading_trivia36
-   "The real producer of \qDon't Fear the Reaper\q was Sandy Pearlman."
+   "The real producer of \q(Don't Fear) The Reaper\q was Sandy Pearlman."
 )
 (loading_trivia37
    "Reportedly, a supernatural horror film entitled \qChemical Wedding\q is due to be released in 2008. The screenplay for the film was written by Iron Maiden singer Bruce Dickinson."
@@ -863,7 +863,7 @@
    "Billy Corgan, vocalist/guitarist for Smashing Pumpkins, released a book of poetry in 2004."
 )
 (loading_trivia40
-   "Despite being left-handed, The Clash's Joe Strummer was taught to play right-handed by the band."
+   "Despite being left-handed, the Clash's Joe Strummer was taught to play right-handed by the band."
 )
 (loading_trivia41
    "Weezer frontman Rivers Cuomo was raised in an ashram in Connecticut."
@@ -887,7 +887,7 @@
    "The Clash played their first gig on July 4th, 1976, opening for fellow punk progenitors the Sex Pistols."
 )
 (loading_trivia48
-   "For a time, before joining The Clash, singer and guitarist Joe Strummer worked as a grave digger."
+   "For a time, before joining the Clash, singer and guitarist Joe Strummer worked as a grave digger."
 )
 (loading_trivia49
    "All of Coheed and Cambria's studio albums to date are segments of an overarching epic saga featuring two characters named Coheed and Cambria."
@@ -908,13 +908,13 @@
    "Deep Purple reportedly improvised \qHighway Star\q on their tour bus on the way to a show after a journalist asked them about their songwriting process."
 )
 (loading_trivia55
-   "Faith No More singer Mike Patton has also lent his vocals to numerous other bands, including Mr. Bungle, The Dillinger Escape Plan, and Peeping Tom."
+   "Faith No More singer Mike Patton has also lent his vocals to numerous other bands, including Mr. Bungle, the Dillinger Escape Plan, and Peeping Tom."
 )
 (loading_trivia56
    "The Foo Fighters are named after a WWII term for an unidentified flying object."
 )
 (loading_trivia57
-   "Garbage co-founder and drummer, Butch Vig, also happened to produce Nirvana's \qNevermind\q and the Smashing Pumpkins' \qGish\q and \qSiamese Dream.\q"
+   "Garbage co-founder and drummer, Butch Vig, also happened to produce Nirvana's \qNevermind\q and the Smashing Pumpkins' \qGish\q and \qSiamese Dream\q."
 )
 (loading_trivia58
    "Health tip: If you have a fever, the only prescription is more cowbell."
@@ -929,16 +929,16 @@
    "Hole bassist Melissa Auf der Maur eventually replaced the Smashing Pumpkins' D'arcy Wretzky. Auf der Maur has since been replaced by Ginger Reyes, formerly of the Halo Friendlies."
 )
 (loading_trivia62
-   "Iron Maiden's beloved zombie/mummy creature mascot is named \qEddie.\q"
+   "Iron Maiden's beloved zombie/mummy creature mascot is named \qEddie\q."
 )
 (loading_trivia63
-   "Jet's first record, \qGet Born,\q takes its name from a lyric in the Bob Dylan song \qSubterranean Homesick Blues.\q"
+   "Jet's first record, \qGet Born\q, takes its name from a lyric in the Bob Dylan song \qSubterranean Homesick Blues\q."
 )
 (loading_trivia64
    "In their make-up, all of the original members of KISS have alter-egos named the Demon, the Star Child, the Space Man, and the Cat Man."
 )
 (loading_trivia65
-   "While the letters K-I-S-S are rumored to stand for \qKnights in Satan's Service,\q the band has claimed that the name was spontaneously conceived while they were driving around Queens, New York."
+   "While the letters K-I-S-S are rumored to stand for \qKnights in Satan's Service\q, the band has claimed that the name was spontaneously conceived while they were driving around Queens, New York."
 )
 (loading_trivia66
    "Molly Hatchet is named after a mythical Southern prostitute that allegedly beheaded her clients."
@@ -953,7 +953,7 @@
    "Bon Jovi's Richie Sambora has taught himself to play numerous instruments in addition to the guitar, including the trumpet and the accordion."
 )
 (loading_trivia70
-   "\qEnter Sandman\q was covered by clean-cut crooner Pat Boone on his 1997 album \qIn a Metal Mood: No More Mr. Nice Guy.\q"
+   "\qEnter Sandman\q was covered by clean-cut crooner Pat Boone on his 1997 album \qIn a Metal Mood: No More Mr. Nice Guy\q."
 )
 (loading_trivia71
    "One of the original Beastie Boys was a woman -- Kate Schellenbach was the group's first drummer."
@@ -1008,7 +1008,7 @@
    "It is rumored that Mountain took their name in reference to singer/guitarist Leslie West's rather substantial physique."
 )
 (loading_trivia89
-   "Mountain singer/guitarist Leslie West played guitar for The Who's demo of \qWon't Get Fooled Again.\q"
+   "Mountain singer/guitarist Leslie West played guitar for the Who's demo of \qWon't Get Fooled Again\q."
 )
 (loading_trivia90
    "Though he occasionally involves other musicians, Trent Reznor generally plays all of the instruments and produces all of the tracks on Nine Inch Nails recordings."
@@ -1026,13 +1026,13 @@
    "A teenage Kurt Cobain once failed an audition for the band Melvins, who are considered to have been the forefathers of grunge."
 )
 (loading_trivia95
-   "Though known as a \qSeattle band,\q Nirvana actually hail from the small harbor town of Aberdeen, Washington."
+   "Though known as a \qSeattle band\q, Nirvana actually hail from the small harbor town of Aberdeen, Washington."
 )
 (loading_trivia96
    "Former Faith No More guitarist Jim Martin was allegedly fired from the band in 1993 by fax."
 )
 (loading_trivia97
-   "Due to their hard-partying ways, Joe Perry and Steven Tyler were known as the \qToxic Twins.\q"
+   "Due to their hard-partying ways, Joe Perry and Steven Tyler were known as the \qToxic Twins\q."
 )
 (loading_trivia98
    "At last count, over twenty-five different musicians have performed in Queens of the Stone Age."
@@ -1053,7 +1053,7 @@
    "Soundgarden singer Chris Cornell was originally also the band's drummer."
 )
 (loading_trivia104
-   "Stone Temple Pilots had its origins when bassist Robert DeLeo met vocalist Scott Weiland at a concert and discovered they shared many of the same interests... and were dating the same girl."
+   "Stone Temple Pilots had its origins when bassist Robert DeLeo met vocalist Scott Weiland at a concert and discovered they shared many of the same interests...and were dating the same girl."
 )
 (loading_trivia105
    "The Who's Pete Townshend is the guitarist most closely associated with \qthe windmill\q move. Townshend reportedly got the idea to do the windmill after seeing Keith Richards doing it while warming up for a show."
@@ -1068,13 +1068,13 @@
    "The Clash toured with legendary rock singer/guitarist Bo Diddley in 1979."
 )
 (loading_trivia109
-   "A decade after its original release, \qShould I Stay or Should I Go\q became The Clash's only single to hit number one on the UK charts."
+   "A decade after its original release, \qShould I Stay or Should I Go\q became the Clash's only single to hit number one on the UK charts."
 )
 (loading_trivia110
-   "The Clash's singer/guitarist Joe Strummer once appeared on South Park and performed the song \qIt's a Rockin' World\q on the record \qChef Aid: The South Park Album.\q"
+   "The Clash's singer/guitarist Joe Strummer once appeared on South Park and performed the song \qIt's a Rockin' World\q on the record \qChef Aid: The South Park Album\q."
 )
 (loading_trivia111
-   "Joe Strummer reportedly married a South African woman in exchange for about 200 dollars in order to grant her UK citizenship... and so that he could purchase a guitar."
+   "Joe Strummer reportedly married a South African woman in exchange for about 200 dollars in order to grant her UK citizenship...and so that he could purchase a guitar."
 )
 (loading_trivia112
    "The Outlaws singer and guitarist Hughie Thomasson defined the band's signature Southern sound with his impressive and influential guitar skills. Thomasson also later played as a member of Lynyrd Skynyrd in the '90s."
@@ -1089,7 +1089,7 @@
    "Pixies frontman Black Francis reportedly found bassist Kim Deal by taking out an ad looking for a bass player who was influenced by both Hüsker Dü and Peter, Paul and Mary."
 )
 (loading_trivia116
-   "The Police singer/bassist Sting played Ace Face in the film \qQuadrophenia,\q a cinematic adaptation of The Who's album of the same name."
+   "The Police singer/bassist Sting played Ace Face in the film \qQuadrophenia\q, a cinematic adaptation of the Who's album of the same name."
 )
 (loading_trivia117
    "Sting, born Gordon Sumner, got his nickname from constantly wearing a yellow and black striped sweater."
@@ -1099,7 +1099,7 @@
 )
 (loading_trivia119 "Bon Jovi guitarist Richie Sambora used to date Cher.")
 (loading_trivia120
-   "There is an unconfirmed story about Mountain drummer Corky Laing getting run over by the Rolling Stones' limo... allegedly he insisted on playing a scheduled gig the next day."
+   "There is an unconfirmed story about Mountain drummer Corky Laing getting run over by the Rolling Stones' limo. Allegedly, he insisted on playing a scheduled gig the next day."
 )
 (loading_trivia121
    "You have about fifty-six seconds to use the bathroom during the organ solo."
@@ -1111,10 +1111,10 @@
    "Weezer played their first gig in LA opening for Dogstar, a band featuring Keanu Reeves on bass."
 )
 (loading_trivia124
-   "Formed in 2000 in Brooklyn, The Yeah Yeah Yeahs get their band name from a phrase commonly heard among impatient New Yorkers."
+   "Formed in 2000 in Brooklyn, the Yeah Yeah Yeahs get their band name from a phrase commonly heard among impatient New Yorkers."
 )
 (loading_trivia125
-   "Karen O, singer for The Yeah Yeah Yeahs, is notorious for her constantly changing, often outlandish stage wardrobe."
+   "Karen O, singer for the Yeah Yeah Yeahs, is notorious for her constantly changing, often outlandish stage wardrobe."
 )
 (loading_trivia126
    "Neil Peart's drum kit is one of the most legendary in rock -- set upon a rotating riser, the set features wind chimes, a gong, a triangle, and an array of cowbells."
@@ -1123,7 +1123,7 @@
    "Bon Jovi drummer Tico Torres is a self-taught painter whose works involve moments with the band."
 )
 (loading_trivia128
-   "Dave Grohl of the Foo Fighters appears for about three seconds in an episode of The X-Files."
+   "Dave Grohl of the Foo Fighters appears for about three seconds in an episode of the X-Files."
 )
 (loading_trivia129
    "In 2001, former Queens of the Stone Age member Nick Oliveri was arrested in Rio for performing onstage wearing only his bass."
@@ -1144,16 +1144,16 @@
    "In 2001, R.E.M. bassist Peter Buck was arrested for allegedly throwing yogurt at a crew member on a flight from Seattle to London."
 )
 (loading_trivia135
-   "For a short time, The Clash co-founder Joe Strummer was a member of Celtic punk progenitors The Pogues."
+   "For a short time, the Clash co-founder Joe Strummer was a member of Celtic punk progenitors the Pogues."
 )
 (loading_trivia136
-   "The New Pornographers' founder Carl Newman claims that the band did NOT choose their name in response to Jimmy Swaggart's assertion that music was \qthe new pornography.\q"
+   "The New Pornographers' founder Carl Newman claims that the band did NOT choose their name in response to Jimmy Swaggart's assertion that music was \qthe new pornography\q."
 )
 (loading_trivia137
    "The fourth gig that Mountain had ever played was Woodstock."
 )
 (loading_trivia138
-   "Queens of the Stone Age were originally called \qGamma Ray,\q but another band had already claimed the name."
+   "Queens of the Stone Age were originally called \qGamma Ray\q, but another band had already claimed the name."
 )
 (loading_trivia139
    "Boston's Tom Scholz did not start playing guitar until he was 21 and recorded \qForeplay\q a year later."
@@ -1186,7 +1186,7 @@
    "Crooked X has played over 85 gigs to-date, despite the fact that all the members are in their early teens."
 )
 (loading_trivia149
-   "Metallica drummer Lars Ulrich's home studio is called \qThe Dungeon.\q"
+   "Metallica drummer Lars Ulrich's home studio is called \qThe Dungeon\q."
 )
 (loading_trivia150
    "Flyleaf was originally called \qPasserby\q but in a longstanding rock tradition, another band had already claimed the name."
@@ -1195,13 +1195,13 @@
    "It is rumored that \qMississippi Queen\q was spontaneously written by drummer Corky Laing during a power outage in a club on Nantucket and was inspired by a nubile vacationer."
 )
 (loading_trivia152
-   "Courtney Love of Hole appeared in the film \qSid and Nancy,\q playing Nancy Spungen's best friend Gretchen."
+   "Courtney Love of Hole appeared in the film \qSid and Nancy\q, playing Nancy Spungen's best friend Gretchen."
 )
 (loading_trivia153
-   "In the '70s, weary of correcting the spelling, The Police guitarist Andy Somers finally changed his last name to \qSummers.\q"
+   "In the '70s, weary of correcting the spelling, the Police guitarist Andy Somers finally changed his last name to \qSummers\q."
 )
 (loading_trivia154
-   "The guitar that Pete Townshend used to record all of \qWho's Next\q was reportedly given to him by Joe Walsh of The Eagles."
+   "The guitar that Pete Townshend used to record all of \qWho's Next\q was reportedly given to him by Joe Walsh of the Eagles."
 )
 (loading_trivia155
    "Most of Molly Hatchet's album covers feature Vikings in various forms of combat, including one astride a unicorn destroying a kraken."
@@ -1210,10 +1210,10 @@
    "The Yeah Yeah Yeahs singer Karen O's last name is Orzolek."
 )
 (loading_trivia157
-   "In 1974, an imposter managed to scam Deep Purple fans out of meals and housing by posing as guitarist Ritchie Blackmore. He was arrested in Iowa after \qborrowing,\q and subsequently totalling, a fan's car."
+   "In 1974, an imposter managed to scam Deep Purple fans out of meals and housing by posing as guitarist Ritchie Blackmore. He was arrested in Iowa after \qborrowing\q, and subsequently totalling, a fan's car."
 )
 (loading_trivia158
-   "Shirley Manson calls her iconic orange guitar \qRita.\q"
+   "Shirley Manson calls her iconic orange guitar \qRita\q."
 )
 (loading_trivia159
    "Faith No More has gone through at least 7 singers and 10 guitarists over the course of the band's history."
@@ -1225,7 +1225,7 @@
    "As a child, Anthony Kiedis played the son of Sylvester Stallone in the movie \qF.I.S.T.\q"
 )
 (loading_trivia162
-   "The first Red Hot Chili Peppers gig consisted of one song. Based on the enthusiastic audience response, they were invited to return for another set... of TWO songs."
+   "The first Red Hot Chili Peppers gig consisted of one song. Based on the enthusiastic audience response, they were invited to return for another set...of TWO songs."
 )
 (loading_trivia163
    "You only have 3,058 notes to hit in this song. No problem."
@@ -1243,13 +1243,13 @@
    "Aerosmith played the \qFuture Villain Band\q in the movie version of Sgt. Pepper's Lonely Hearts Club Band."
 )
 (loading_trivia168
-   "Along with Aerosmith, bands including The Yardbirds, Led Zeppelin, Racer X, Motörhead, and Bon Jovi have all covered \qTrain Kept A Rollin'.\q"
+   "Along with Aerosmith, bands including the Yardbirds, Led Zeppelin, Racer X, Motörhead, and Bon Jovi have all covered \qTrain Kept A Rollin'\q."
 )
 (loading_trivia169
    "James Hetfield of Metallica has reportedly stated that Aerosmith was his biggest musical influence."
 )
 (loading_trivia170
-   "Sweet's Mick Tucker and Deep Purple's Ian Gillan were originally in a band called \qWainwright's Gentlemen.\q"
+   "Sweet's Mick Tucker and Deep Purple's Ian Gillan were originally in a band called \qWainwright's Gentlemen\q."
 )
 (loading_trivia171
    "\qBallroom Blitz\q was reportedly conceived when the members of Sweet were forced to leave the stage due to \qa shower of bottles\q during a concert in Scotland."
@@ -1270,72 +1270,72 @@
    "Fall Out Boy's guitarist Joe Trohman reportedly bought his first half-stack guitar amp with his bar mitzvah money."
 )
 (loading_trivia177
-   "Before joining The Killers, Brandon Flowers worked at a Las Vegas casino."
+   "Before joining the Killers, Brandon Flowers worked at a Las Vegas casino."
 )
 (loading_trivia178
-   "While on tour, The Killers' guitarist Dave Keuning was \qaccidentally\q abandoned by his bandmates after stopping at a gas station."
+   "While on tour, the Killers' guitarist Dave Keuning was \qaccidentally\q abandoned by his bandmates after stopping at a gas station."
 )
 (loading_trivia179
    "The Killers' bassist Mark Stoermer once had a job transporting human transplant organs as a medical courier."
 )
 (loading_trivia180
-   "To settle any arguments between music nerds, first they were \qThe Sweet.\q Then they were just \qSweet.\q So there you go."
+   "To settle any arguments between music nerds, first they were \qThe Sweet\q. Then they were just \qSweet\q. So there you go."
 )
 (loading_trivia181
    "The Konks' Kurt Davis protects his drum heads by covering them in duct tape. This also makes them sound pretty cool."
 )
 (loading_trivia182
-   "As both the drummer and singer for The Konks, Kurt Davis props up his kit at the front of the stage using old record crates."
+   "As both the drummer and singer for the Konks, Kurt Davis props up his kit at the front of the stage using old record crates."
 )
 (loading_trivia183
-   "Collectively, The Konks have 29 fingers. Six of them are thumbs."
+   "Collectively, the Konks have 29 fingers. Six of them are thumbs."
 )
 (loading_trivia184 "James Hetfield's mother was an opera singer.")
 (loading_trivia185
-   "Pronunciation tip: VAGIANT rhymes with defiant. Sort of."
+   "You might recognize Tijuana Sweetheart's music from this game, Guitar Hero II, and Rock Band Network later down the road. They are the band formerly known as VAGIANT, having to change the band name due to a legal dispute over the use of the name (Pronunciation tip: VAGIANT rhymes with defiant...sort of)."
 )
 (loading_trivia186
-   "One time when she was a child, VAGIANT drummer LoWreck decided to dig up her dead pet parakeet \qPeachy.\q It was gross so she put it back."
+   "One time when she was a child, Tijuana Sweetheart drummer LoWreck decided to dig up her dead pet parakeet Peachy. It was gross so she put it back."
 )
-(loading_trivia187 "VAGIANT's drummer LoWreck can bench press your mom.")
+(loading_trivia187 "Tijuana Sweetheart's drummer LoWreck can bench press your mom.")
 (loading_trivia188
-   "VAGIANT's drummer LoWreck sometimes tells people that she made out with Joan Jett. She did not. But it would've been cool if she had."
+   "Tijuana Sweetheart's drummer LoWreck sometimes tells people that she made out with Joan Jett. She did not. But it would've been cool if she had."
 )
 (loading_trivia189
-   "The VAGIANT logo features three rat skulls -- an homage to the rat infestation of their beloved hometown of Allston, MA."
+   "The Tijuana Sweetheart logo features three rat skulls -- an homage to the rat infestation of their beloved hometown of Allston, MA."
 )
 (loading_trivia190
-   "VAGIANT guitarist Smokey can totally do the robot. Totally. Big time."
+   "Tijuana Sweetheart guitarist Smokey can totally do the robot. Totally. Big time."
 )
 (loading_trivia191
-   "The Hellion, singer and guitarist for VAGIANT, plays on the Durotan server. The rest of the band makes fun of her for it."
+   "The Hellion, singer and guitarist for Tijuana Sweetheart, plays on the Durotan server. The rest of the band makes fun of her for it."
 )
 (loading_trivia192
-   "VAGIANT played their first show opening for The Acro-brats. VAGIANT played only four songs and then instigated six fights and lost three instruments. Yay!"
+   "Tijuana Sweetheart played their first show opening for the Acro-brats. Tijuana Sweetheart played only four songs and then instigated six fights and lost three instruments. Yay!"
 )
 (loading_trivia193
-   "VAGIANT bassist Ivahna Rock bought her first motorcycle from a member of the Hells Angels... on a payment plan."
+   "Tijuana Sweetheart bassist Ivahna Rock bought her first motorcycle from a member of the Hells Angels...on a payment plan."
 )
 (loading_trivia194
-   "Oddly enough, if you play \qCan't Let Go\q' backwards, it sounds like \qDon't Fear the Reaper.\q"
+   "Oddly enough, if you play \qCan't Let Go\q backwards, it sounds like \q(Don't Fear) The Reaper\q."
 )
 (loading_trivia195
-   "Warning: the following song is in 11/4. If you don't know what that means, well... just keep playing and don't think about the beat."
+   "Warning: The following song is in 11/4. If you don't know what that means, well...just keep playing and don't think about the beat."
 )
 (loading_trivia196
    "Death of the Cool is one of those pretentious bands that tries to look cool by pretending not to be."
 )
 (loading_trivia197
-   "The original lineup for Death of the Cool was a cat and dog. The cat knew karate. The dog knew \qsit\q and \qheel.\q"
+   "The original lineup for Death of the Cool was a cat and dog. The cat knew karate. The dog knew \qsit\q and \qheel\q."
 )
 (loading_trivia198
    "Death of the Cool has 30 fingers and only 6 are thumbs."
 )
 (loading_trivia199
-   "Death of the Cool is not a Miles Davis tribute band... or ARE they?? No, they're not."
+   "Death of the Cool is not a Miles Davis tribute band...or ARE they?? No, they're not."
 )
 (loading_trivia200
-   "Death of the Cool might remind you of what the B-52s would sound like if they penned an album right after all their dogs died in a freak electrical storm."
+   "Death of the Cool might remind you of what the B-52's would sound like if they penned an album right after all their dogs died in a freak electrical storm."
 )
 (loading_trivia201
    "Death of the Cool consists of the members of Count Zero, Breaking Wheel, and inter:sect."
@@ -1354,7 +1354,7 @@
    "If you get arrested in Canada, like Freezepop, at least the poutine is pretty great."
 )
 (loading_trivia207
-   "When you tour outside the U.S., Freezepop says to tell people you're from \qnear Canada.\q"
+   "When you tour outside the U.S., Freezepop says to tell people you're from \qnear Canada\q."
 )
 (loading_trivia208
    "Anarchy Club's lineup is 11 times smaller than that of Bang Camaro."
@@ -1405,7 +1405,7 @@
    "The Acro-brats have found that learning to enjoy the rank smell of the practice space is far easier than cleaning it."
 )
 (loading_trivia224
-   "Sometimes, The Acro-brats' bassist Swid Brat takes off his pants at shows. This is strangely compelling for some show-goers and exceedingly regrettable for others."
+   "Sometimes, the Acro-brats' bassist Swid Brat takes off his pants at shows. This is strangely compelling for some show-goers and exceedingly regrettable for others."
 )
 (loading_trivia225
    "The Acro-brats' bassist Swid Brat builds complex amps and pedals from scratch, which is pretty impressive. What's more impressive is that he still hasn't fixed Daniel Brat's backup head that he broke two years ago."
@@ -1414,7 +1414,7 @@
    "The Acro-brats' drummer Eliahu Brat will break sticks during practice at a very rapid rate and then hold them up and show the other three guys where the split is on the drumstick. This will take about three minutes. Nobody knows what to say or do when he does this, so they just stand silently until he's done."
 )
 (loading_trivia227
-   "Don't ask The Acro-brats' bassist Swid Brat to explain germanium transistors. Unless you're really, really, really into germanium transistors."
+   "Don't ask the Acro-brats' bassist Swid Brat to explain germanium transistors. Unless you're really, really, really into germanium transistors."
 )
 (loading_trivia228
    "Honest Bob and the Factory-to-Dealer Incentives played their first gig in 1992, possibly before you were born."
@@ -1423,7 +1423,7 @@
    "None of the members of Honest Bob and the Factory-to-Dealer Incentives is named Bob, although they are all scrupulously honest."
 )
 (loading_trivia230
-   "Yes, that is an F-sharp barre being played during the words \qF-sharp barre.\q"
+   "Yes, that is an F-sharp barre being played during the words \qF-sharp barre\q."
 )
 (loading_trivia231
    "The members of Tribe recorded their first album (released on vinyl!) in the basement of the house where they all lived in Brighton, MA."
@@ -1432,25 +1432,25 @@
    "Tribe had a radio hit in South Africa and continue to make about $2.00 a year from South African airplay royalties."
 )
 (loading_trivia233
-   "This 1975 hit by The Outlaws is entitled \qGreen Grass and High Tides.\q The 1966 greatest hits album by the Rolling Stones is entitled \qHigh Tide and Green Grass.\q Try not to get confused."
+   "This 1975 hit by the Outlaws is entitled \qGreen Grass and High Tides\q. The 1966 greatest hits album by the Rolling Stones is entitled \qHigh Tide and Green Grass\q. Try not to get confused."
 )
 (loading_trivia234
-   "When VAGIANT drummer LoWreck was a child, she used to wrap paper towels around her wrists and pretend that she broke her arm, and then would go to her friends' houses and get cookies and candy from their moms. She later graduated to medical bandages and it was much more believable."
+   "When Tijuana Sweetheart drummer LoWreck was a child, she used to wrap paper towels around her wrists and pretend that she broke her arm, and then would go to her friends' houses and get cookies and candy from their moms. She later graduated to medical bandages and it was much more believable."
 )
 (loading_trivia235
-   "In \qDay Late, Dollar Short,\q if you pronounce it \qdoll-errr\q and not \qdoll-ah,\q you automatically lose the game. The game of life. Boston life."
+   "In \qDay Late, Dollar Short\q, if you pronounce it 'doll-errr' and not 'doll-ah', you automatically lose the game. The game of life. Boston life."
 )
 (loading_trivia236
    "At the very first Acro-brats show, before the very first song, Chris Brat's guitar strap snapped during mic check. The guitar neck snapped in two, which was awesome."
 )
 (loading_trivia237
-   "The Hellion of VAGIANT shares the same birthday as Johnny Ramone, which is kind of sad because her favorite Ramone is Dee Dee. But hey, it's still sort of cool."
+   "The Hellion of Tijuana Sweetheart shares the same birthday as Johnny Ramone, which is kind of sad because her favorite Ramone is Dee Dee. But hey, it's still sort of cool."
 )
 (loading_trivia238
-   "Singers: you have about two minutes and forty-three seconds to run around heckling your bandmates before you need to worry about actually singing."
+   "Singers: You have about two minutes and forty-three seconds to run around heckling your bandmates before you need to worry about actually singing."
 )
 (loading_trivia239
-   "It is a verified true fact that no one on the planet Earth knows how to pronounce The Hives' singer Pelle Almqvist's name."
+   "It is a verified true fact that no one on the planet Earth knows how to pronounce the Hives' singer Pelle Almqvist's name."
 )
 (stratocaster01 "Fender<sup>TM</sup> Standard Stratocaster<sup>TM</sup>")
 (stratocaster01_desc
@@ -1598,7 +1598,7 @@
    "Fender<sup>TM</sup> J5 Triple Telecaster<sup>TM</sup> Deluxe"
 )
 (telecaster05_desc
-   "If you want your guitar to scream \qaggressive,\q \nthis Tele<sup>TM</sup>, with its third hum-cancelling pickup, vintage tremolo bridge, and chrome pickguard is ideal. Just don't try to sneak it through any metal detectors."
+   "If you want your guitar to scream \qaggressive\q, \nthis Tele<sup>TM</sup>, with its third hum-cancelling pickup, vintage tremolo bridge, and chrome pickguard is ideal. Just don't try to sneak it through any metal detectors."
 )
 (telecaster05_paint "Paint")
 (telecaster05_sparkle "Sparkle")
@@ -1920,11 +1920,11 @@
 )
 (goathead "The Goat Head")
 (goathead_desc
-   "When the audience starts giving you the \qsign of the goat,\q you won't know whether they're complimenting your shredding style or just saying hello to your guitar."
+   "When the audience starts giving you the \qsign of the goat\q, you won't know whether they're complimenting your shredding style or just saying hello to your guitar."
 )
 (mace "The Mace")
 (mace_desc
-   "This trusty axe will bring new meaning to the term \qskull-crushing solo.\q If that's a term that people say. They should, it's cool."
+   "This trusty axe will bring new meaning to the term \qskull-crushing solo\q. If that's a term that people say. They should, it's cool."
 )
 (skull "The Skull")
 (skull_desc
@@ -1982,7 +1982,7 @@
 )
 (goatheadbass "The Goat Head Bass")
 (goatheadbass_desc
-   "When the audience starts giving you the \qsign of the goat,\q you won't know whether they're complimenting your skill or just saying hello to your bass."
+   "When the audience starts giving you the \qsign of the goat\q, you won't know whether they're complimenting your skill or just saying hello to your bass."
 )
 (skullbass "The Skull Bass")
 (skullbass_desc
@@ -1998,7 +1998,7 @@
 )
 (macebass "The Mace Bass")
 (macebass_desc
-   "This trusty axe will bring new meaning to the term \qskull-crushing solo.\q If that's a term that people say. They should, it's cool."
+   "This trusty axe will bring new meaning to the term \qskull-crushing solo\q. If that's a term that people say. They should, it's cool."
 )
 (precision01clear
    "Clear Fender<sup>TM</sup> American Vintage 1962 Precision Bass<sup>TM</sup>"
@@ -2126,7 +2126,7 @@
 (jaguarbass_woodmaple "Maple")
 (g6073 "Gretsch<sup>TM</sup> G6073 Electrotone<sup>TM</sup> Bass")
 (g6073_desc
-   "Gretsch<sup>TM</sup> has been making high-quality, hollow body guitars for over 100 years. This thunderously powerful and curvy bass is a worthy representative of \qThat Great Gretsch<sup>TM</sup> Sound.\q"
+   "Gretsch<sup>TM</sup> has been making high-quality, hollow body guitars for over 100 years. This thunderously powerful and curvy bass is a worthy representative of \qThat Great Gretsch<sup>TM</sup> Sound\q."
 )
 (g6073_paint "Paint")
 (g6073_sparkle "Sparkle")
@@ -2198,7 +2198,7 @@
 )
 (mic1_silver "Silver Microphone")
 (mic1_silver_desc
-   "For a 25th wedding anniversary, you buy silver. For the 25th time your bassist is late to a show due to \qlosing track of the time,\q you buy a silver microphone."
+   "For a 25th wedding anniversary, you buy silver. For the 25th time your bassist is late to a show due to \qlosing track of the time\q, you buy a silver microphone."
 )
 (main_cheat_msg_fmt "CHEAT ACCESSED: %s")
 (me_notes_hit "Notes Hit")
@@ -2366,10 +2366,12 @@
 )
 (tour_band_sel_load_active "Controller Active")
 (perfect_solo "Perfect Solo!")
+(choke_solo "Awesome Choke!")
 (awesome_solo "Awesome Solo!")
 (great_solo "Great Solo!")
 (solid_solo "Good Solo!")
 (okay_solo "Solid Solo")
+(nice_solo "Nice")
 (bad_solo "Okay Solo")
 (failed_solo "Messy Solo")
 (bass_streak "Bass Groove")
@@ -2384,6 +2386,7 @@
 (tamb_rating_4 "OKAY")
 (tamb_rating_5 "STRONG")
 (tamb_rating_6 "AWESOME")
+(tamb_rating_7 "PERFECT")
 (matchmaker_character_hint_title "band charaters:")
 (matchmaker_choose_char "Select Rocker")
 (matchmaker_choose_part "Choose Instrument")
@@ -2789,13 +2792,13 @@
    "Your quote contains text that is not allowed.  You can still view it locally, but it will not be visible on the leaderboards until you change it."
 )
 (tour_profile_motto_profane
-   "Your intended band quote is not what most would describe as \qclassy.\q  You can still view it locally, but it will not be visible online until you change it."
+   "Your intended band quote is not what most would describe as \qclassy\q.  You can still view it locally, but it will not be visible online until you change it."
 )
 (tour_profile_motto_ip
    "Your intended band quote is forbidden to be used online.  You can still view it locally, but it will not be visible online until you change it."
 )
 (tour_profile_create_band_name_profane
-   "Your intended band name is not what most would describe as \qclassy.\q You can continue to use this name locally, but it will not be visible online unless you change it in the Band Profile."
+   "Your intended band name is not what most would describe as \qclassy\q. You can continue to use this name locally, but it will not be visible online unless you change it in the Band Profile."
 )
 (tour_profile_create_band_name_dup
    "There is already a band with that name online!  You can continue to use this name locally, but it will not be available online unless you change it in the Band Profile."
@@ -2804,7 +2807,7 @@
    "Your intended band name is not allowed to be used online.  You can continue to use this name locally, but it will not be visible online unless you change it in the Band Profile."
 )
 (tour_profile_rename_band_name_profane
-   "Your intended band name is not what most would describe as \qclassy.\q  You can continue to use this name locally, but it will not be visible online unless you change it in the Band Profile."
+   "Your intended band name is not what most would describe as \qclassy\q.  You can continue to use this name locally, but it will not be visible online unless you change it in the Band Profile."
 )
 (tour_profile_rename_band_name_dup
    "Someone has already used your intended band name online.  You can continue to use this name locally, but it will not be visible online unless you change it in the Band Profile."
@@ -2844,13 +2847,13 @@
    "Your quote contains text that is not allowed.  You can still view it locally, but it will not be visible on Xbox LIVE until you change it."
 )
 (tour_profile_motto_profane
-   "Your intended band quote is not what most would describe as \qclassy.\q  You can still view it locally, but it will not be visible on Xbox LIVE until you change it."
+   "Your intended band quote is not what most would describe as \qclassy\q.  You can still view it locally, but it will not be visible on Xbox LIVE until you change it."
 )
 (tour_profile_motto_ip
    "Your intended band quote is forbidden to be visible on Xbox LIVE.  You can still view it locally, but it will not be visible on Xbox LIVE until you change it."
 )
 (tour_profile_create_band_name_profane
-   "Your intended band name is not what most would describe as \qclassy.\q You can continue to use this name locally, but it will not be visible on Xbox LIVE unless you change it in the Band Profile."
+   "Your intended band name is not what most would describe as \qclassy\q. You can continue to use this name locally, but it will not be visible on Xbox LIVE unless you change it in the Band Profile."
 )
 (tour_profile_create_band_name_dup
    "There is already a band with that name on Xbox LIVE. You can continue to use this name locally, but it will not be available on Xbox LIVE unless you change it in the Band Profile."
@@ -2859,7 +2862,7 @@
    "Your intended band name is not allowed to be used on Xbox LIVE.  You can continue to use this name locally, but it will not be visible on Xbox LIVE unless you change it in the Band Profile."
 )
 (tour_profile_rename_band_name_profane
-   "Your intended band name is not what most would describe as \qclassy.\q  You can continue to use this name locally, but it will not be visible on Xbox LIVE unless you change it in the Band Profile."
+   "Your intended band name is not what most would describe as \qclassy\q.  You can continue to use this name locally, but it will not be visible on Xbox LIVE unless you change it in the Band Profile."
 )
 (tour_profile_rename_band_name_dup
    "Someone has already used your intended band name on Xbox LIVE.  You can continue to use this name locally, but it will not be available on Xbox LIVE unless you change it in the Band Profile."

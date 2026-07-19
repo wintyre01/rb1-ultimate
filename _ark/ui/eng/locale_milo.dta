@@ -56,8 +56,8 @@
 ('Customize Character' "Customize Character")
 (delete_art "Delete Art")
 (Disconnected! "Disconnected!")
-(dolby "Dolby<sup>®</sup> Digital")
-(doubly "Dolby<sup>®</sup> Digital")
+(dolby "Dolby<sup>ï¿½</sup> Digital")
+(doubly "Dolby<sup>ï¿½</sup> Digital")
 (drum_tut_basic_beats_complete "Basic Beats Complete")
 (drum_tut_bre_task1 "1. Drum like a madman")
 (drum_tut_bre_task2 "2. Play the ending note perfectly")
@@ -138,7 +138,7 @@
 ('Join Band' "Join Band")
 (kick_player "Kick Player")
 (lag_crt "Standard (CRT) TV")
-(lag_dlp "DLP<sup>®</sup> TV")
+(lag_dlp "DLP<sup>ï¿½</sup> TV")
 (lag_lcd "LCD TV")
 (lag_plasma "Plasma TV")
 (lag_rearproj "Rear Projection TV")
@@ -158,9 +158,9 @@
    "Set the Lag Compensation by pressing the left button or the right button, then choose NEXT to confirm the setting."
    #else
    "Set the Lag Compensation by pressing Left or Right on the D-Pad, then choose NEXT to confirm the setting."
-   #endif
-)
-(matchmaker_choose_gender "Choose Gender")
+   #endif)
+(matchmaker_choose_gender
+   "Choose Body Type")
 (mics_changed_desc
    #ifdef HX_PS3
    "A microphone has been disconnected from the system! Please test to check that your microphone works before continuing."
@@ -197,7 +197,7 @@
 (pause_song "CHANGE SONG")
 (pause_speed "CHANGE SPEED")
 (pay_to_play_choice
-   "Rock Band allows online play and features that expand the boundaries of music gaming. In order to access online play and additional features, you need an online access key. You can obtain a free online access key by answering a short survey or you can visit the PLAYSTATION<sup>®</sup> Store to purchase an access key for a one-time fee of $1.00. \n\nIf you choose to complete the survey, no personally identifiable information will be associated with your answers, which will remain anonymous and be aggregated with other responses."
+   "Rock Band allows online play and features that expand the boundaries of music gaming. In order to access online play and additional features, you need an online access key. You can obtain a free online access key by answering a short survey or you can visit the PLAYSTATION<sup>ï¿½</sup> Store to purchase an access key for a one-time fee of $1.00. \n\nIf you choose to complete the survey, no personally identifiable information will be associated with your answers, which will remain anonymous and be aggregated with other responses."
 )
 (personal_cut "Personal Cut:")
 (play_gig "Continue Tour")
