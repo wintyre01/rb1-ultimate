@@ -196,6 +196,8 @@
 (new_wave "New Wave")
 (indierock "Indie")
 (grunge "Grunge")
+(male "MASCULINE")
+(female "FEMININE")
 (export_tip1
    "Download singles, packs and full albums from the Rock Band Music Store!"
 )
