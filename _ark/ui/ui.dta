@@ -43,6 +43,10 @@
       {gamemode set_mode store}
    }
    {ui goto_screen $first_screen}
+   {thread_task kTaskUISeconds
+      (delay 0.01)
+      (script {mod_overlay init_group})
+   }
 )
 (band_ui_sink
    #include band_ui_sink.dta
@@ -232,7 +236,15 @@
 )
 (overload_horizontal_nav TRUE)
 #include cam.dta
-(SELECT_START_MSG {synth play button_select} kDataUnhandled)
+(SELECT_START_MSG
+   {if_else {&& {exists overshell} {overshell up}}
+      FALSE
+      {do
+         {synth play button_select}
+         kDataUnhandled
+      }
+   }
+)
 (SCROLL_MSG
    {if {ui current_screen}
       {do
@@ -290,10 +302,16 @@
    kDataUnhandled
 )
 (BUTTON_DOWN_MSG
-   {handle
-      (profile_mgr button_down $button $player_num)
+   {print {sprint $button " " $player_num}}
+   {if_else {&& {exists overshell} {overshell up}}
+      {overshell button_down $button $player_num}
+      {do
+         {handle
+            (profile_mgr button_down $button $player_num)
+         }
+         kDataUnhandled
+      }
    }
-   kDataUnhandled
 )
 (latin_to_ascii
    (192 65)
