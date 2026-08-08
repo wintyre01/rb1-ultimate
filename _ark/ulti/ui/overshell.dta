@@ -3,11 +3,9 @@
    (focus OS_LIST)
    (up [up])
    (state main)
-   (focused FALSE)
    (states (#include overshell_states.dta))
    (enter
       {set [state] main}
-      {set [focused] FALSE}
       {$this eval_all enter}
    )
    (BUTTON_DOWN_MSG
@@ -39,7 +37,6 @@
          {eval_array ({OS_LIST selected_pos} {OS_LIST first_showing})}
       }
    )
-   (VIRTUAL_KEYBOARD_RESULT_MSG {$this eval_all virtual_keyboard_result_msg})
    (set_up
       ($b)
       {set [up] $b}
@@ -47,14 +44,10 @@
       {{helpbar_overshell loaded_dir} set_showing [up]}
       {{overshell_lower3rd_panel loaded_dir} set_showing [up]}
       {helpbar set_showing {! [up]}}
-      {{helpbar_dialog find all.grp} set_showing {! [up]}}
-      {if_else [up]
-         {do
-            {$this enter}
-            {helpbar_overshell enter}
-            {overshell_lower3rd_panel enter}
-         }
-         {$this eval_all exit}
+      {if [up]
+         {$this enter}
+         {helpbar_overshell enter}
+         {overshell_lower3rd_panel enter}
       }
    )
    (state_find
@@ -314,9 +307,9 @@
                            }
                         )
                         {cond
-                           ({&& {== $type uColorSld} $selected [focused]} $fmt)
+                           ({&& {== $type uColorSld} $selected {$this has (focused)} [focused]} $fmt)
                            ({== $type uColorSld} {localize {elem $entry 0}})
-                           ({&& $hide_on_sel $selected [focused]}
+                           ({&& $hide_on_sel $selected {$this has (focused)} [focused]}
                               {sprint {localize os_l} $fmt {localize os_r}}
                            )
                            ($hide_on_sel {localize {elem $entry 0}})
@@ -333,7 +326,7 @@
       {OS_LIST set_data $array}
       {if {$this state_has pos}
          {OS_LIST set_selected {elem {$this state_get pos} 0} {elem {$this state_get pos} 1}}
-         {if [focused]
+         {if {&& {$this has (focused)} [focused]}
             {foreach $entry $array
                {if {!= $entry {elem $array {elem {$this state_get pos} 0}}}
                   {OS_LIST disable_data {symbol $entry}}
@@ -372,7 +365,7 @@
                   }
                )
                ((uSld uFakeSld uColorSld)
-                  {set [focused] TRUE}
+                  {$this set focused TRUE}
                   {OS_LIST set store
                      {cond
                         ({find_exists $entry var}
@@ -403,11 +396,11 @@
       {if_else {== {type $entry} kDataArray}
          {switch {elem {find $entry type} 1}
             ((uSld uFakeSld uColorSld)
-               {if_else [focused]
+               {if_else {&& {$this has (focused)} [focused]}
                   {switch $button
                      (kPad_X
                         {synth play button_select}
-                        {set [focused] FALSE}
+                        {$this set focused FALSE}
                         {OS_LIST set store 0}
                         {color.mesh set_showing FALSE}
                         {$this update_helpbar}
@@ -415,7 +408,7 @@
                      )
                      (kPad_Tri
                         {synth play button_back}
-                        {set [focused] FALSE}
+                        {$this set focused FALSE}
                         {cond
                            ({find_exists $entry var}
                               {set_var {elem {find $entry var} 1} {OS_LIST get store}}
@@ -613,7 +606,7 @@
       {helpbar_overshell set_config
          {if_else {== {type $entry} kDataArray}
             {cond
-               ({&& {== $type uColorSld} [focused]}
+               ({&& {== $type uColorSld} {$this has (focused)} [focused]}
                   (
                      helpbar_cancel
                      helpbar_confirmsetting
@@ -634,7 +627,7 @@
                      os_copy
                   )
                )
-               ([focused]
+               ({&& {$this has (focused)} [focused]}
                   (
                      helpbar_cancel
                      helpbar_confirmsetting

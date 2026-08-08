@@ -1302,14 +1302,8 @@
    tour_preload_song_panel
    (content_name "")
    (corrupt FALSE)
-   (load
-      {game set_song {{tour performer} next_song}}
-      {update_song_midi}
-   )
+   (load {game set_song {{tour performer} next_song}})
    (enter
-      #ifdef HX_XBOX
-      {check_song_corrupt}
-      #endif
       {if_else [preload_ok]
          {ui goto_screen tour_load_song_screen}
          {band_ui_sink content_file_read_failed [content_name] [corrupt]}

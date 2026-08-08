@@ -138,9 +138,6 @@
          }
       }
       {update_vocal_gender}
-      #ifdef HX_XBOX
-      {check_song_corrupt}
-      #endif
       #ifdef IGNORE_PRELOAD_OK
       {ui goto_screen real_loading_screen}
       #else
@@ -153,7 +150,6 @@
       }
       #endif
    )
-   (load {update_song_midi})
 }
 {new UIScreen
    preloading_screen

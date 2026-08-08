@@ -1,6 +1,5 @@
 #include overshell.dta
 #include autoplay.dta
-#include camera_debug.dta
 {new UIPanel
    main_bandtour_panel
    (file "../../ui/main_bandcoop.milo")
@@ -312,19 +311,12 @@
             filter_difficulty
             filter_genre
             filter_decade
-            filter_game_origin
             filter_alphabetic_song
             filter_alphabetic_band
+            filter_game_origin
          )
       }
-      {players.lst set_selected
-         {switch {song_provider get_display}
-            (3 4)
-            (4 5)
-            (5 3)
-            {song_provider get_display}
-         }
-      }
+      {players.lst set_selected {song_provider get_display}}
       {players.lst set_local_pos_index 2 63.00}
    )
    (BUTTON_DOWN_MSG
@@ -335,19 +327,9 @@
    )
    (SELECT_MSG
       {ui pop_screen}
-      {do
-         ($i
-            {switch {$component selected_pos}
-               (4 3)
-               (5 4)
-               (3 5)
-               {$component selected_pos}
-            }
-         )
-         {unless {== $i {song_provider get_display}}
-            {[target] set_grouping_method $i}
-            {[target] sync_grouping_method}
-         }
+      {unless {== {$component selected_pos} {song_provider get_display}}
+         {[target] set_grouping_method {$component selected_pos}}
+         {[target] sync_grouping_method}
       }
    )
 }
@@ -607,11 +589,6 @@
       {push_back [msgs] $msg}
       {$this update}
    )
-   (queue_message_icon
-      ($msg $icon)
-      {push_back [msgs] {` ({, $msg} {, $icon})}}
-      {$this update}
-   )
    (update
       {if_else {size [msgs]}
          {unless [waiting]
@@ -622,16 +599,7 @@
                   {message_pos.tnm set_frame
                      {== {ui current_screen} {gamemode get game_screen}}
                   }
-                  {if_else {== {type {elem [msgs] 0}} kDataArray}
-                     {do
-                        {message.lbl set_localized {elem {elem [msgs] 0} 0}}
-                        {icon.lbl set_localized {elem {elem [msgs] 0} 1}}
-                     }
-                     {do
-                        {message.lbl set_localized {elem [msgs] 0}}
-                        {icon.lbl set_localized "!"}
-                     }
-                  }
+                  {message.lbl set_localized {elem [msgs] 0}}
                   {remove_elem [msgs] {elem [msgs] 0}}
                   {$task sleep [msg_duration]}
                   {set [waiting] FALSE}
