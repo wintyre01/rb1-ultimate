@@ -109,11 +109,11 @@
          (bool $kickbounce)
          (sel_script {toggle_var kickbounce})
       )
-      (os_prodrums
-         (type uOnOFF)
-         (bool $prodrums)
-         (sel_script {toggle_var prodrums})
-      )
+;      (os_prodrums
+;         (type uOnOFF)
+;         (bool $prodrums)
+;         (sel_script {toggle_var prodrums})
+;      )
       (os_fcring
          (type uOnOFF)
          (bool $fcring)
