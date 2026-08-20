@@ -1,4 +1,5 @@
 #include overshell.dta
+#ifdef HX_NG
 #include autoplay.dta
 {new UIPanel
    main_bandtour_panel
@@ -169,6 +170,7 @@
       kDataUnhandled
    )
 }
+#endif
 {new UIScreen
    early_warning_screen
    (panels dialog_panel)
@@ -187,6 +189,7 @@
       kDataUnhandled
    )
 }
+#ifdef HX_NG
 {new UIPanel
    tour_pre_selsongsync_panel
    (remote_players ())
@@ -339,15 +342,6 @@
    (focus change_sort_panel)
    (exit {band_ui_sink set_net_sync TRUE})
 }
-{new Object
-   on_save_load
-   (save_load_all_complete_msg
-      {profile_mgr set_overscan TRUE}
-      {memcardmgr remove_sink $this}
-      {delete $this}
-   )
-}
-{memcardmgr add_sink on_save_load save_load_all_complete_msg}
 {new UIScreen
    overshell_ok_msg ; a lie
    (panels dialog_panel)
@@ -571,13 +565,6 @@
       kDataUnhandled
    )
 }
-{new CharProfilePanel char_data}
-{{new Object permadeath_mgr} set_type permadeath_mgr}
-{permadeath_mgr init}
-
-{{new Object asset_mgr} set_type asset_mgr}
-{asset_mgr init}
-
 {new UIPanel
    passive_messages_panel
    (file passive_messages.milo)
@@ -618,9 +605,8 @@
 {passive_messages_panel load TRUE}
 {{passive_messages_panel loaded_dir} set_showing FALSE}
 
-{{new Object mod_overlay} set_type mod_overlay}
-{mod_overlay init}
 {mod_overlay add {passive_messages_panel loaded_dir}}
 {mod_overlay add {helpbar_overshell loaded_dir}}
 {mod_overlay add {overshell_lower3rd_panel loaded_dir}}
 {mod_overlay add {overshell loaded_dir}}
+#endif

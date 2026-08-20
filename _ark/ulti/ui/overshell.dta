@@ -1,7 +1,12 @@
 {new UIPanel overshell
+   #ifdef HX_NG
    (file overshell.milo)
-   (focus OS_LIST)
    (up [up])
+   #else
+   (file ../../ui/practice_sel_section_og.milo)
+   (up {overshell_screen is_up})
+   #endif
+   (focus OS_LIST)
    (state main)
    (states (#include overshell_states.dta))
    (enter
@@ -40,6 +45,7 @@
    (set_up
       ($b)
       {set [up] $b}
+      #ifdef HX_NG
       {{$this loaded_dir} set_showing [up]}
       {{helpbar_overshell loaded_dir} set_showing [up]}
       {{overshell_lower3rd_panel loaded_dir} set_showing [up]}
@@ -49,6 +55,14 @@
          {helpbar_overshell enter}
          {overshell_lower3rd_panel enter}
       }
+      #else
+      {helpbar set_showing {! [up]}}
+      {helpbar_dialog set_showing {! [up]}}
+      {unless [up]
+         {ui pop_screen}
+         {$this eval_all exit}
+      }
+      #endif
    )
    (state_find
       ($s)
@@ -313,6 +327,16 @@
                               {sprint {localize os_l} $fmt {localize os_r}}
                            )
                            ($hide_on_sel {localize {elem $entry 0}})
+                           ({&& {find_elem (uSld uFakeSld) $type} $selected [focused]}
+                              {sprint
+                                 {localize os_l}
+                                 {sprintf {localize {elem $entry 0}} $fmt}
+                                 {localize os_r}
+                              }
+                           )
+                           ({find_elem (uSld uFakeSld) $type}
+                              {sprintf {localize {elem $entry 0}} $fmt}
+                           )
                            (TRUE {sprintf {localize {elem $entry 0}} $fmt})
                         }
                      }
@@ -333,6 +357,7 @@
                }
             }
          }
+         #endif
       }
       {OS_LIST poll}
       {$this update_helpbar}
@@ -653,10 +678,40 @@
          }
       }
    })
+   #ifndef HX_NG
+   (finish_load
+      {OS_LIST set_type overshell}
+      {OS_LIST set_local_pos 180.00 0.00 78.88}
+      {full_selection.mesh set_showing FALSE}
+   )
+   #endif
 }
 {new UIPanel helpbar_overshell HELPBAR_HANDLERS (limit_to_session TRUE)}
-{new UIPanel overshell_lower3rd_panel (file "../../ui/practice_lower3rd.milo")}
+{new UIPanel overshell_lower3rd_panel
+   #ifdef HX_NG
+   (file "../../ui/practice_lower3rd.milo")
+   #else
+   (file "../../ui/practice_lower3rd_og.milo")
+   #endif
+}
+#ifdef HX_NG
 {overshell load TRUE}
 {helpbar_overshell load TRUE}
 {overshell_lower3rd_panel load TRUE}
 {overshell set_up FALSE}
+#else
+{new UIScreen overshell_screen
+   (panels
+      overshell
+      helpbar_overshell
+      overshell_lower3rd_panel
+   )
+   (focus overshell)
+   (enter
+      {overshell set_up TRUE}
+      {helpbar_overshell set_config ()}
+      {overshell update_helpbar}
+   )
+   (exit {overshell set_up FALSE})
+}
+#endif
