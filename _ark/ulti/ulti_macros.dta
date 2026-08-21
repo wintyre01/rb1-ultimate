@@ -1,13 +1,10 @@
 #define ULTI_VENUES (
    small_club_battle
-   theater_stone
    small_club_den
    small_club_rooftop
-   small_club_kroom
-   big_club_tv
 )
 #define ULTI_H2H_VENUES (
-   big_club_tv
+   small_club_rooftop ; here to prevent hang. remove.
 )
 #define RB2_VENUES (
    small_club_13

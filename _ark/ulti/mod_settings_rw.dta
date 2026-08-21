@@ -12,11 +12,7 @@
       drum_trackspeed
       track0_trackspeed
       track1_trackspeed
-      guitar_hwlength
-      bass_hwlength
-      drum_hwlength
-      track0_hwlength
-      track1_hwlength
+      hwlength
       scrbloom
       camerashake
       fxdof
@@ -58,8 +54,6 @@
       crowd
       force_per_pixel
       force_vg
-      ;fast_selsong
-      videobgs
       gtrgem1
       gtrgem2
       gtrgem3
