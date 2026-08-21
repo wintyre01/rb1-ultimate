@@ -89,7 +89,6 @@
       }
       {$this set_paused {! $show}}
    )
-   #ifdef HX_NG
    (finish_load
       {foreach $o
          (
@@ -112,5 +111,4 @@
       }
       {mtv_cover_line3.lbl set leading 0.60}
    )
-   #endif
 }

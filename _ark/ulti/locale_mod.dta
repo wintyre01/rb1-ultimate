@@ -19,7 +19,6 @@
 (os_spd "Speed Settings")
 (os_other "Other Settings")
 (os_av "Audio/Video Settings")
-#ifdef HX_NG
 (os_onoff_fmt "%s %s")
 (on "�")
 (off "�")
@@ -103,26 +102,6 @@
 (guitar_sym "Guitar")
 (drum_sym "Drum")
 (vocals_sym "Vocals")
-#ifdef HX_WII
-(os_pad_x "A")
-(os_pad_circle "2")
-(os_pad_square "1")
-(os_pad_tri "B")
-(os_pad_select "-")
-#endif
-#ifdef HX_EE
-(os_pad_x "Cross")
-(os_pad_circle "Circle")
-(os_pad_square "Square")
-(os_pad_tri "Triangle")
-(os_pad_l2 "L2")
-(os_pad_l1 "L1")
-(os_pad_r1 "R1")
-(os_pad_r2 "R2")
-(os_pad_l3 "L3")
-(os_pad_r3 "R3")
-(os_pad_select "Select")
-#endif
 #ifdef HX_PS3
 (os_pad_x "Cross")
 (os_pad_circle "Circle")

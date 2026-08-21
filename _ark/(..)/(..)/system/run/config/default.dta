@@ -3,15 +3,13 @@
    (iop_modules
       (iop/scrtchpd.irx)
       (iop/sio2man.irx)
-      (iop/mtapman.irx)
       (iop/mcman.irx)
       (iop/mcserv.irx)
       (iop/usbd.irx)
-      #ifndef _SHIP
       (iop/usbkb.irx "keybd=1" "debug=0")
-      #endif
       (iop/padman.irx)
       (iop/msifrpc.irx)
+      (iop/mtapman.irx)
       (iop/libsd.irx)
       (iop/sdrdrv.irx)
       (iop/cdvdstm.irx)
@@ -22,9 +20,8 @@
       (sample_rate k4KHz)
    )
    (keyboard (disable FALSE))
-   (multitap (disable FALSE))
+   (multitap (disable TRUE))
    (language (default eng))
-   (region (default na))
    (fp_exceptions TRUE)
    (main_dir 19997 150000)
    (dir_sort
@@ -36,7 +33,6 @@
       Blur
       Group
       Trans
-      #ifdef HX_NG
       OutfitLoader
       Waypoint
       CharClipSet
@@ -49,9 +45,6 @@
       WorldInstance
       #ifdef INIT_BAND
       CompositeCharacter
-      #endif
-      #else
-      RndDir
       #endif
    )
    (xbox_map_file "%s/default_%s.map")
@@ -86,15 +79,7 @@
             (debug 0)
          )
          #else
-            #ifdef HX_WII
-            (main (size 32000000))
-            (rnd
-               (size 8000000)
-               (handle TRUE)
-            )
-            #else
-            (main (size 500000000))
-            #endif
+         (main (size 500000000))
          #endif
       #endif
       #ifdef HX_PC
@@ -118,11 +103,7 @@
    (use_null_synth FALSE)
    (mute FALSE)
    (stream_buf_size 1.2)
-   #ifdef HX_NG
    (stream_readahead 0)
-   #else
-   (stream_readahead 3)
-   #endif
    (use_xma TRUE)
    (enable_headset_output FALSE)
    (oggvorbis
@@ -170,11 +151,7 @@
    (mic
       (gain 0.1)
       (volume -1)
-      #ifdef HX_NG
       (fx TRUE)
-      #else
-      (fx FALSE)
-      #endif
       (dma FALSE)
       (compressor TRUE 0.7)
       (talk_threshold 5.0e-2)
@@ -311,7 +288,7 @@
 )
 (rnd
    #ifdef HX_EE
-   (width 640)
+   (width 512)
    (height 448)
    #else
    (width 640)
